@@ -1,0 +1,30 @@
+h1,
+h2 {
+    text-transform: uppercase;
+    font-family: monospace;
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 20px;
+    text-decoration: plum underline wavy;
+}
+
+p {
+    /* double the default lie height */
+    line-height: 2;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-family: Callibli, sans-serif;
+    color: red;
+    background-color: pink;
+}
+
+a {
+    /* Remove the link default underline */
+    text-decoration: none;
+}
+
+button {
+    background-color: pink;
+    color: red;
+}

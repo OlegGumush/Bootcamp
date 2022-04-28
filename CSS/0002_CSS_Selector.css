@@ -1,0 +1,92 @@
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,
+h2 {
+    color: #1d3557;
+}
+
+/* We use # for ids not for classes */
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: #457b9d;
+}
+
+.span-tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 20px;
+}
+
+/* all a tags inside post class */
+.post a {
+    color: 457b9d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* all a tags with dislikes id - not in use in HMTL */
+#dislikes a {
+    color: red;
+    font-weight: bold;
+}
+
+/* all a tags inside footer */
+footer a {
+    color: #e63946;
+}
+
+/* All buttons that come after h2 in same level */
+h2+button {
+    font-size: 20px;
+    /* background-color: magenta; */
+}
+
+/* All a tags that come after footer as a direct child */
+footer>a {
+    color: #457b9d;
+}
+
+/* Any passord type input */
+input[type="password"] {
+    color: green;
+}
+
+/* When you hover button inside a post */
+.post button:hover {
+    color: #e63946;
+    background-color: black;
+}
+
+/* Click on the button without release */
+.post button:active {
+    background-color: #02c39a;
+}
+
+a:hover { 
+    text-decoration: underline;
+}
+
+/* every second post */
+.post:nth-of-type(2n) {
+    background-color: #dfe8dc;
+}
+
+/* pseudo classes */
+h2:first-letter {
+    font-size: 50px;
+}
