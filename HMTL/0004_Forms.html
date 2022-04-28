@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="/search" method="post">
+        <p>
+            <label for="username">Enter Username:</label>
+            <input id="username" name="username_name" type="text" placeholder="text">
+        </p>
+        <p>
+            <label for="password">Enter Password:</label>
+            <input id="password" name="password_name" type="password" placeholder="password"><br>
+        </p>
+        <p>
+            <label for="color">Enter Color:</label>
+            <input id="color" name="color_name" type="color"><br>
+        </p>
+        <p>
+            <label for="number">Enter Number:</label>
+            <input id="number" name="number_name" type="number" placeholder="number" min="1" max="100" step="5"><br>
+        </p>
+        <button>Default button submits form</button><br>
+        <button type="button">Regular button</button>
+    </form>
+
+    <form action="https://www.reddit.com/search" method="get">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+
+    <h2>More inputs</h2>
+    <form action="/checkboxes">
+        <p>
+            <input type="checkbox" name="agree_terms" id="agree_id" value="true" checked>
+            <label for="agree_id">I agree to everything</label>
+        </p>
+        <p>
+            <input type="checkbox" name="agree_terms1" id="agree_id1" value="true" checked>
+            <label for="agree_id1">I agree to everything</label>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <!-- Name groups elements together -->
+    <form action="/Radio Buttons">
+        <p>
+            <input type="radio" name="agree_terms" id="agree_id" value="option1" checked>
+            <label for="agree_id">Option 1</label>
+        </p>
+        <p>
+            <input type="radio" name="agree_terms" id="agree_id1" value="option2">
+            <label for="agree_id1">Option 2</label>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <form action="/Select">
+        <p>
+            <label for="select_id">Select</label>
+            <select name="value" id="select_id">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+            <button>Submit</button>
+        </p>
+    </form>
+
+    <form action="/Range">
+        <p>
+            <label for="range_id">Select range:</label>
+            <input type="range" name="range" id="range_id" min="1" max="100" value="10" step="6">
+            <button>Submit</button>
+        </p>
+    </form>
+
+    <form action="/Text Area">
+        <label for="text_area_id">Insert input:</label>
+        <p>
+            <textarea name="text_area_input" id="text_area_id" rows="5" cols="20" placeholder="number">
+            </textarea>
+        </p>
+        <button>Submit</button>
+        </p>
+    </form>
+
+    <h2>Validation</h2>
+    <form action="/dummy">
+        <label for="username">Enter Username:</label>
+        <input id="username" name="username_name" type="text" placeholder="required" required><br>
+        <label for="username1">Enter Username:</label>
+        <input id="username1" name="username_name1" type="text" placeholder="5-10" required minlength=5
+            maxlength=10><br>
+        <label for="email">Enter Email:</label>
+        <input id="email" name="email" type="email" required><br>
+        <button>Submit</button>
+    </form>
+
+
+    <h1>Race Registration!</h1>
+    <form action="/dummy">
+        <div>
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" type="text" required>
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" type="text" required>
+        </div>
+        <div>Select a Race:</div>
+        <div>
+            <input type="radio" id="selectRace0" name="race" value="run" checked>
+            <label for="selectRace0">Fun Run 5K</label>
+        </div>
+        <div>
+            <input type="radio" id="selectRace1" name="race" value="half">
+            <label for="selectRace1">Half Moon</label>
+        </div>
+        <div>
+            <input type="radio" id="selectRace2" name="race" value="full">
+            <label for="selectRace2">Full Moon</label>
+        </div>
+        <div>
+            <label for="emailForm">Email:</label>
+            <input id="emailForm" name="email" type="email" required>
+            <label for="passwordForm">Password:</label>
+            <input id="passwordForm" name="password" type="password" required>
+        </div>
+        <div>
+            <label for="selectForm">Select Age Group</label>
+            <select name="age" id="selectForm">
+                <option value="1">18-30</option>
+                <option value="2">30-50</option>
+                <option value="3">50+</option>
+            </select>
+            <button>Submit</button>
+        </div>
+        <button>Register!</button>
+    </form>
+</body>
+
+</html>
