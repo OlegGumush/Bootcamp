@@ -1,0 +1,45 @@
+body {
+    margin: 0ex;
+}
+
+div {
+    width: 210px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(236, 183, 191);
+}
+
+h1 {
+    margin-left: 1000px;
+}
+
+h2 {
+    margin-left: 50px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+
+    height: 100px;
+    width: 100px;
+    background-color: wheat;
+    border-width: 5px;
+    border-style: double;
+
+    /* Width of the box included border */
+    box-sizing: border-box;
+}
+
+h3 {
+    /* width style color */
+    border: 10px dashed green;
+}
+
+button {
+    padding: 10px 5px 0 20px;
+    margin: 10px 5px 0 20px;
+}

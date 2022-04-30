@@ -1,0 +1,48 @@
+h1 {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+
+    /* change display to be like a span (inline element) */
+    display: inline;
+}
+
+span {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+
+    /* change display to be like a h1 (block element) */
+    display: block;
+
+    /* Looks like inline behaves like block */
+    display: inline-block;
+}
+
+section {
+    width: 800px;
+    height: 800px;    
+    background-color: aqua;
+}
+
+div {
+    background-color: red;
+    width: 50%;
+    height: 50%;
+}
+
+article {
+    font-size: 20px;
+}
+
+/* Inherite relative font size from article */
+button {
+    font-size: 2rem;
+    padding: 0px 2rem;
+    border-radius: 1rem;
+    background-color: #2a9d8f;
+    color: white;
+}
+
+/* 
+    ems  inherite from parent
+    rems inherite from root element
+*/
