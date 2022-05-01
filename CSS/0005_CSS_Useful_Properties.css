@@ -1,0 +1,19 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 150, 199, 0.4);
+}
+
+
+#rgba-opacity {
+    width: 50%;
+    height: 50%;
+    background-color: #dfe8dc;
+    opacity: 0.5; /* Also posible to add to move digits dfe8dcff */
+}

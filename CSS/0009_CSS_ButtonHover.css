@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #151b29;
+    /*  */
+    display: flex;
+    /*  */
+    align-items: center;
+    /*  */
+    justify-content: center;
+    /*  */
+    height: 100vh;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    color: #ffa260;
+    padding: 1em 2em;
+    border-radius: 2em;
+    font-size: 1.5em;
+    transition: color 0.125s, border-color 0.125s, box-shadow 0.125s, transform 0.125s;
+}
+
+button:hover {
+    border-color: #f1ff5c;
+    color: white;
+    /* Read about box shadow */
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    /* Move up by 1/4 em */
+    transform: translateY(-0.25em);
+    /* change cursor to pointer */
+    cursor: pointer;
+}
