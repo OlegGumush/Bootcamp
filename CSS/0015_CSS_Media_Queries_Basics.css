@@ -6,15 +6,22 @@ h1 {
     font-size: 6em;
     text-align: center;
 }
+
 nav {
     font-size: 1.5em;
 }
 
-ul,li {
+ul,
+li {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
 
-
+/* 800 and above */
+@media (max-width: 800px) {
+    h1 {
+        color: purple;
+    }
+}
