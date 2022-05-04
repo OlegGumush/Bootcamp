@@ -59,7 +59,7 @@ div {
     */
 
     /* 
-        How the content is distributed accross the croos axis (same as justify-content but on cross axis)
+        How the content is distributed accross the cross axis (same as justify-content but on cross axis)
         align-items: flex-start;
         align-items: flex-end;
         align-items: center;
