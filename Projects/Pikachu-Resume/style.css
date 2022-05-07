@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    cursor: default;
 }
 
 .container {
@@ -55,7 +56,6 @@ body {
     list-style: none;
     position: relative;
     margin: 5px 0;
-    cursor: pointer;
 }
 
 .contact-info ul li .icon {
@@ -145,6 +145,7 @@ body {
     color: #03a9f4;
     font-size: 18px;
     width: 20px;
+    margin-right: 3px;
 }
 
 .profile-text .img-box {
@@ -248,20 +249,16 @@ hr {
 }
 
 .about-skills .icon {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     width: 30px;
-    font-size: 20px;
-    color: #003147;
     height: 30px;
-    margin-right: 10px;
-}
+    font-size: 21px;
 
-.about-skills .educative-icon {
-    display: inline-block;
-    width: 21px;
     color: #003147;
-    height: 21px;
-    margin-right: 19px;
+    margin-right: 10px;
 }
 
 .about-skills .box a {
@@ -269,6 +266,7 @@ hr {
     display: flex;
     color: #2a7da2;
     flex-direction: row;
+    align-items: center;
 }
 
 @media(max-width: 1200px) {
