@@ -1,32 +1,36 @@
-let todoList = []
-let command = ""
+let todoList = [];
+let command = "";
+
+console.log("Start...");
 
 while (command !== "quit") {
-    command = "";
-    while (command === "") {
-        command = prompt("What would you like to do?");
-    }
+
+    console.log("Enter command ...");
+    command = getFromPromt("What would you like to do?");
+    console.log("Command " + command);
+
     if (command === "new") {
-        let toDo = ""
-        while (toDo === "") {
-            toDo = prompt("Enter new todo");
-        }
-        todoList.push(toDo)
+        let toDo = getFromPromt("Enter new todo");
+        todoList.push(toDo);
     }
-    else if (command === "list") {
+    if (command === "list") {
         console.log("*****************************");
         for (let i = 0; i < todoList.length; i++) {
             console.log(`${i}: ${todoList[i]}`);
         }
-        console.log("*****************************")
+        console.log("*****************************");
     }
     else if (command === "remove") {
-        let index = ""
-        while (index === "") {
-            index = prompt("Enter index");
-        }
-        todoList.remove(index);
-        index.sp
+        let index = parseInt(getFromPromt("Enter index"));
+        todoList.splice(index, 1);
     }
 }
 
+function getFromPromt(message) {
+
+    let toDo = "";
+    // while (toDo === "") {
+    toDo = prompt(message);
+    // }
+    return toDo;
+}
